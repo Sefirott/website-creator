@@ -49,7 +49,6 @@ function Toolbar() {
       ref={dragRef}
       onMouseDown={handleMouseDown}
     >
-      {/* Your toolbar content */}
     </div>
   );
 }

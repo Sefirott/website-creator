@@ -4,7 +4,8 @@ body {
 
 .toolbar {
   background: #000;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 50vh;
   cursor: pointer;
+  border: 4px solid #7b1daa;
 }
