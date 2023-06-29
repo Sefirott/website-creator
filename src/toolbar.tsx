@@ -7,6 +7,7 @@ function Toolbar() {
   const dragStartCoords = useRef({ x: 0, y: 0 });
   const dragOffset = useRef({ x: 0, y: 0 });
 
+
   useEffect(() => {
     const handleMouseUp = () => {
       setIsDragging(false);
@@ -45,7 +46,7 @@ function Toolbar() {
   return (
     <div
       className="toolbar"
-      style={{ position: "absolute", top: position.y, left: position.x }}
+      style={{ position: "absolute", top: position.y, right: -position.x }}
       ref={dragRef}
       onMouseDown={handleMouseDown}
     >
