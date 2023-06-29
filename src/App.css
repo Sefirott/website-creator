@@ -1,0 +1,10 @@
+body {
+  background: radial-gradient(circle, #F9D0E6, #c377bb);
+}
+
+.toolbar {
+  background: #000;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
