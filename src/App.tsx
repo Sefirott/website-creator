@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import './App.css'
+import Pen from './toolbar-props/pen.tsx';
 import Toolbar from './toolbar.tsx';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-    <Toolbar />
+    <Toolbar Pen={Pen} />
     </> 
   )
 }

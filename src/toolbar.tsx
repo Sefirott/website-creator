@@ -1,6 +1,6 @@
 import { useState, useRef, MouseEvent, useEffect } from "react";
 
-function Toolbar() {
+function Toolbar( { Pen } : any ) {
   const [isDragging, setIsDragging] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const dragRef = useRef<HTMLDivElement>(null);
@@ -44,13 +44,18 @@ function Toolbar() {
   };
 
   return (
+    <>
     <div
       className="toolbar"
       style={{ position: "absolute", top: position.y, right: -position.x }}
       ref={dragRef}
       onMouseDown={handleMouseDown}
-    >
+      >
+
+        <Pen />
+
     </div>
+      </>
   );
 }
 
