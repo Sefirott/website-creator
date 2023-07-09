@@ -1,6 +1,6 @@
 import { useState, useRef, MouseEvent, useEffect } from "react";
 
-function Toolbar( { Pen } : any ) {
+function Toolbar( { Pen, Trash } : any ) {
   const [isDragging, setIsDragging] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const dragRef = useRef<HTMLDivElement>(null);
@@ -53,6 +53,8 @@ function Toolbar( { Pen } : any ) {
       >
 
         <Pen />
+
+        <Trash />
 
     </div>
       </>

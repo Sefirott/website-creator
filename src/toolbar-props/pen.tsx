@@ -13,7 +13,7 @@ function Pen() {
 
     return (
         <>
-         <div className="icon-container">
+         <div className="pen-container">
             <FaPen className="pen" />
         </div>
         </>

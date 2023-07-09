@@ -17,11 +17,25 @@ body {
   padding: 18px;  
 }
 
-.icon-container:hover {
+.pen-container:hover {
   background-color: purple;
 }
 
 
 .pen:active {
+  font-size: 16px;
+}
+
+.trash {
+  font-size: 24px;
+  padding: 18px; 
+  
+}
+
+.trash-container:hover {
+  background-color: rgb(197, 11, 11);
+}
+
+.trash:active {
   font-size: 16px;
 }
